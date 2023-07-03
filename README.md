@@ -13,15 +13,19 @@ Create a folder `App` under project.
 
 To start the tests, depending of your OS run:
 
-- `./start_tests_Mac.sh` on MacOS/Linux
-
-    Create a folder `TrashCatMac` under `App`.
+- **MacOS**:
+    1. Instal the [AltTesterDesktop](https://alttester.com/app/uploads/AltTester/desktop/AltTesterDesktopPackageMac__v2.0.1.zip), then open it.
+    2. Create a folder `TrashCatMac` under `App`.
     The app is provided at https://altom.com/app/uploads/AltTester/TrashCat/TrashCatMacOS.app.zip and needs to be included unzipped under the App/TrashCatMac/ folder.
+    3. run `./start_tests_Mac.sh` in your bash terminal.
 
-- `./start_tests_Windows.sh` on Windows
+- **Windows**:
+    1. Instal the [AltTesterDesktop](https://alttester.com/app/uploads/AltTester/desktop/AltTesterDesktopPackageMac__v2.0.1.zip), then open it.
+    2. Create a folder `TrashCatWindows` under `App`.
+    The app is provided at https://alttester.com/app/uploads/AltTester/TrashCat/TrashCatStandAlone2_0_1.zip and needs to be included unzipped under the App/TrashCatWindows/ folder.
+    3. run `./start_tests_Windows.sh` in your bash terminal
 
-    Create a folder `TrashCatWindows` under `App`.
-    The app is provided at https://altom.com/app/uploads/AltTester/TrashCat/TrashCatWindows.zip and needs to be included unzipped under the App/TrashCatWindows/ folder.
+    
     
 This script will:
 
