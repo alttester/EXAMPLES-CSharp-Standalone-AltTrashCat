@@ -1,8 +1,3 @@
-# echo "==> Start AltTester Desktop"
-# start "" "AltTester Desktop\AltTesterDesktop.exe"
-# echo "==> Wait for AltTesterDesktop to start"
-# sleep 5
-# waiting for clarifications about the terms and conditions 
 echo "==> Start application"
 start "" "App\TrashCatWindows\TrashCat.exe"
 
@@ -15,6 +10,3 @@ dotnet test  -- NUnit.TestOutputXml = "TestAlttrashCSharp"
 
 echo "==> Kill app"
 taskkill //PID $(tasklist | grep TrashCat.exe | awk '{print $2}') //T //F
-
-# echo "==> Kill app"
-# taskkill //PID $(tasklist | grep AltTesterDesktop.exe | awk '{print $2}') //T //F
