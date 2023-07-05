@@ -17,7 +17,7 @@ To start the tests, depending of your OS run:
 - **MacOS**:
     1. Install the [AltTesterDesktop](https://alttester.com/app/uploads/AltTester/desktop/AltTesterDesktopPackageMac__v2.0.1.zip), then open it.
     2. Create a folder `TrashCatMac` under `App`.
-    The app is provided at https://altom.com/app/uploads/AltTester/TrashCat/TrashCatMacOS.app.zip and needs to be included unzipped under the App/TrashCatMac/ folder.
+    The app is provided at https://alttester.com/app/uploads/AltTester/TrashCat/TrashCat.app.zip and needs to be included unzipped under the App/TrashCatMac/ folder.
     3. run `./start_tests_Mac.sh` in your bash terminal.
 
 - **Windows**:
