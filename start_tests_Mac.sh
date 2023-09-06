@@ -8,7 +8,7 @@ echo "==>Restore test project and run tests"
 dotnet test --results-directory allure-results
 
 echo "Generate allure html report..."
-allure serve allure-results &
+allure generate allure-results -o allure-reports
 
 echo "==>Kill app"
 killall TrashCat
