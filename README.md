@@ -1,0 +1,1 @@
+# EXAMPLES-CSharp-AllureNUnit-AltTrashCat
