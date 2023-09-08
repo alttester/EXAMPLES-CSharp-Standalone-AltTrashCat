@@ -42,4 +42,4 @@ This script will:
 - start the app on your device
 - run the tests
 - generate an allure html reporter
-- stop the app after the test are done
+- stop the app after the tests are done
