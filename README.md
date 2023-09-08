@@ -34,7 +34,7 @@ To start the tests, depending of your OS run:
     6. run `./start_tests_Mac.sh` in your bash terminal.
 
 
-❗ To see the allure report, navigate to the `allure-reports` folder and open the `index.html` file [with live server](https://www.alphr.com/vs-code-open-with-live-server/).
+❗ To see the Allure report, navigate to the `allure-reports` folder and open the `index.html` file [with live server](https://www.alphr.com/vs-code-open-with-live-server/).
 
    
 This script will:
