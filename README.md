@@ -20,18 +20,16 @@ To start the tests, depending of your OS run:
     2. Install Allure on your Windows by following the steps from [Scoop installation](https://docs.qameta.io/allure/#_windows) or [Manual installation](https://docs.qameta.io/allure/#_manual_installation)
     3. Create a folder `TrashCatWindows` under `App`.
     The app is provided at https://alttester.com/app/uploads/AltTester/TrashCat/TrashCatStandAlone2_0_1.zip and needs to be included unzipped under the App/TrashCatWindows/ folder.
-    4. Create a folder called `allure-results` and `allure-report` under the project.
-    5. Create an `allureConfig.json` file under `bin/Debug/netcoreappX`. For the content of this file, please take a look at the following [example](https://docs.qameta.io/allure/#_config_samples)
-    6. run `./start_tests_Windows.sh` in your bash terminal
+    4. Create an `allureConfig.json` file under `bin/Debug/netcoreappX`. For the content of this file, please take a look at the following [example](https://docs.qameta.io/allure/#_config_samples)
+    5. Run `./start_tests_Windows.sh` in your bash terminal.
 
 - **MacOS**:
     1. Install the [AltTesterDesktop](https://alttester.com/app/uploads/AltTester/desktop/AltTesterDesktopPackageMac__v2.0.1.zip), then open it.
     2. Install Allure on your MacOS by using the following command in your terminal `brew install allure`.
     3. Create a folder `TrashCatMac` under `App`.
     The app is provided at https://alttester.com/app/uploads/AltTester/TrashCat/TrashCat.app.zip and needs to be included unzipped under the App/TrashCatMac/ folder.
-    4. Create a folder called `allure-results` and `allure-report` under the project
-    5. Create an `allureConfig.json` file under `bin/Debug/netcoreappX`. For the content of this file, please take a look at the following [example](https://docs.qameta.io/allure/#_config_samples)
-    6. run `./start_tests_Mac.sh` in your bash terminal.
+    4. Create an `allureConfig.json` file under `bin/Debug/netcoreappX`. For the content of this file, please take a look at the following [example](https://docs.qameta.io/allure/#_config_samples)
+    5. Run `./start_tests_Mac.sh` in your bash terminal.
 
 
 ❗ To see the Allure report, navigate to the `allure-reports` folder and open the `index.html` file [with live server](https://www.alphr.com/vs-code-open-with-live-server/).
