@@ -32,12 +32,13 @@ To start the tests, depending of your OS run:
     5. Run `./start_tests_Mac.sh` in your bash terminal.
 
 
-❗ To see the Allure report, navigate to the `allure-reports` folder and open the `index.html` file [with live server](https://www.alphr.com/vs-code-open-with-live-server/).
+❗ To manually open the Allure report, navigate to the `allure-reports` folder and open the `index.html` file [with live server](https://www.alphr.com/vs-code-open-with-live-server/).
 
    
 This script will:
 
 - start the app on your device
+- create an `allure-results` folder
 - run the tests
-- generate an Allure html report
+- generate and start Allure report
 - stop the app after the tests are done

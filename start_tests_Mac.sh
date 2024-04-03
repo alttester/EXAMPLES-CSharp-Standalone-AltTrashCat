@@ -9,6 +9,7 @@ dotnet test --results-directory allure-results
 
 echo "Generate allure html report..."
 allure generate allure-results -o allure-reports
+allure serve allure-results &
 
 echo "==> Kill app"
 killall TrashCat
