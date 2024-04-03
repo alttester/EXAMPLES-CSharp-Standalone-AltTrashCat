@@ -10,6 +10,7 @@ dotnet test  -- NUnit.TestOutputXml = "TestAlttrashCSharp" --results-directory a
 
 echo "Generate allure html report..."
 allure generate allure-results -o allure-reports
+allure serve allure-results &
 
 echo "==> Kill app..."
 taskkill //PID $(tasklist | grep TrashCat.exe | awk '{print $2}') //T //F
