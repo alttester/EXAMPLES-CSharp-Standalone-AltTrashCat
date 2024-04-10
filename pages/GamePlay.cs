@@ -43,10 +43,14 @@ namespace alttrashcat_tests_csharp.pages
                 System.Console.WriteLine("Obstacle: " + obstacle.name + ", z:" + obstacle.worldZ + ", x:" + obstacle.worldX);
                 System.Console.WriteLine("Next: " + allObstacles[1].name + ", z:" + allObstacles[1].worldZ + ", x:" + allObstacles[1].worldX);
 
-                while (obstacle.worldZ - character.worldZ > 5)
+                var stopwatch1 = new System.Diagnostics.Stopwatch();
+                var ts1 = new TimeSpan();
+                stopwatch1.Start();
+                while (obstacle.worldZ - character.worldZ > 5 && ts1.Seconds < 15)
                 {
                     obstacle = Driver.FindObject(By.ID, obstacle.id.ToString());
                     character = Driver.FindObject(By.NAME, "PlayerPivot");
+                    ts1 = stopwatch1.Elapsed;
                 }
                 if (obstacle.name.Contains("ObstacleHighBarrier"))
                 {
@@ -56,7 +60,7 @@ namespace alttrashcat_tests_csharp.pages
                 if (obstacle.name.Contains("ObstacleLowBarrier") || obstacle.name.Contains("Rat"))
                 {
 
-                    Driver.PressKey(AltKeyCode.UpArrow, 0, 0);
+                    Driver.PressKey(AltKeyCode.UpArrow);
                 }
                 else
                 {
@@ -66,12 +70,12 @@ namespace alttrashcat_tests_csharp.pages
                         {
                             if (allObstacles[1].worldX == -1.5f)
                             {
-                                Driver.PressKey(AltKeyCode.RightArrow, 0, 0);
+                                Driver.PressKey(AltKeyCode.RightArrow);
                                 movedRight = true;
                             }
                             else
                             {
-                                Driver.PressKey(AltKeyCode.LeftArrow, 0, 0);
+                                Driver.PressKey(AltKeyCode.LeftArrow);
                                 movedLeft = true;
                             }
                         }
@@ -81,12 +85,12 @@ namespace alttrashcat_tests_csharp.pages
                             {
                                 if (obstacle.worldX == -1.5f)
                                 {
-                                    Driver.PressKey(AltKeyCode.RightArrow, 0, 0);
+                                    Driver.PressKey(AltKeyCode.RightArrow);
                                     movedRight = true;
                                 }
                                 else
                                 {
-                                    Driver.PressKey(AltKeyCode.LeftArrow, 0, 0);
+                                    Driver.PressKey(AltKeyCode.LeftArrow);
                                     movedLeft = true;
                                 }
                             }
@@ -96,24 +100,28 @@ namespace alttrashcat_tests_csharp.pages
                     {
                         if (obstacle.worldX == character.worldX)
                         {
-                            Driver.PressKey(AltKeyCode.RightArrow, 0, 0);
+                            Driver.PressKey(AltKeyCode.RightArrow);
                             movedRight = true;
                         }
                     }
                 }
-                while (character.worldZ - 3 < obstacle.worldZ && character.worldX < 99)
+                var stopwatch2 = new System.Diagnostics.Stopwatch();
+                var ts2 = new TimeSpan();
+                stopwatch2.Start();
+                while (character.worldZ - 3 < obstacle.worldZ && character.worldX < 99 && ts2.Seconds < 15)
                 {
                     obstacle = Driver.FindObject(By.ID, obstacle.id.ToString());
                     character = Driver.FindObject(By.NAME, "PlayerPivot");
+                    ts2 = stopwatch2.Elapsed;
                 }
                 if (movedRight)
                 {
-                    Driver.PressKey(AltKeyCode.LeftArrow, 0, 0);
+                    Driver.PressKey(AltKeyCode.LeftArrow);
                     movedRight = false;
                 }
                 if (movedLeft)
                 {
-                    Driver.PressKey(AltKeyCode.RightArrow, 0, 0);
+                    Driver.PressKey(AltKeyCode.RightArrow);
                     movedRight = false;
                 }
             }
