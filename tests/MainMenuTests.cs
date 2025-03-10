@@ -1,9 +1,9 @@
 using System;
 using System.Threading;
-using AltTester.AltTesterUnitySDK.Driver;
+using AltTester.AltTesterSDK.Driver;
 using alttrashcat_tests_csharp.pages;
-using NUnit.Framework;
 using NUnit.Allure.Core;
+using NUnit.Framework;
 namespace alttrashcat_tests_csharp.tests
 {
     [TestFixture]
