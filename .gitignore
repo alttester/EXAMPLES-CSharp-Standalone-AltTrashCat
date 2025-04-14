@@ -2,3 +2,4 @@ App/*
 bin
 obj
 allure-*
+.vs/
